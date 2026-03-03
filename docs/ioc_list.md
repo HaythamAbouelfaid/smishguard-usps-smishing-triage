@@ -1,6 +1,19 @@
-# IOC List (Example)
+# Indicator of Compromise (IOC) List
 
-- phone: +17058541876
-- attachment: USPS-Notice-USD497.pdf
-- url (as written): USPS.COM/REDELIVERY
-- lure text: "Urgent Notice", "unable to deliver", "click here", "check attachment"
+## Incident
+USPS Smishing Campaign
+
+## Phone Numbers
++17058541876
+
+## URLs
+USPS.COM/REDELIVERY
+
+## Domains
+USPS.COM
+
+## Attachments
+USPS-Notice-USD497.pdf
+
+## Description
+SMS phishing (smishing) message impersonating USPS delivery service and attempting to lure victims into clicking a malicious redelivery link.
