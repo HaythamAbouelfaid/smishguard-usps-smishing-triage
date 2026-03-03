@@ -1,0 +1,24 @@
+title: Smishing Keywords - USPS Redelivery Lure
+id: 3f2b13d3-16b7-4a51-9c6b-8d2b0c7b9f5f
+status: experimental
+description: Detects SMS/email content matching common USPS redelivery smishing lures (urgent notice + unable to deliver + click here).
+author: Haytham Abouelfaid
+date: 2026/03/03
+logsource:
+  category: application
+  product: any
+detection:
+  selection:
+    Message|contains:
+      - "UNITED STATES POSTAL SERVICE"
+      - "USPS"
+      - "Urgent Notice"
+      - "unable to deliver"
+      - "shipping label"
+      - "reschedule"
+      - "redelivery"
+      - "CLICK HERE"
+  condition: selection
+falsepositives:
+  - Legitimate user discussions about USPS (rare in gateway logs)
+level: high
