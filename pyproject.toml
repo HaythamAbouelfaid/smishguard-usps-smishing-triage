@@ -1,6 +1,7 @@
-[tool.ruff]
-line-length = 100
-select = ["E","F","I","UP","B"]
+[project]
+name = "smishguard"
+version = "0.1.0"
+requires-python = ">=3.9"
 
-[tool.pytest.ini_options]
-testpaths = ["tests"]
+[tool.setuptools]
+packages = ["smishguard"]
